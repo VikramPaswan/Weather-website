@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./image4.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.weather-app{
+    background-color: rgba(255, 255, 255, 0.437);
+    max-width: 600px;
+    margin-top: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 50vw;
+}
+.search-form{
+    display: flex;
+    align-items: center;
+}
+input[type="text"]{
+    flex: 1;
+    padding: 20px;
+    border: 2px solid #3498db;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+.btn{
+    background-color: #3498db;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    transition: 0.3s ease;
+}
+.btn:hover{
+    background-color: #2980b9;
+    transform: scale(1.1)translateX(2px);
+}
+.four{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.cds{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.cds .city{
+    font-size: 2rem;
+    opacity: 0.9;
+}
+.cds .date{
+    background-color: #c3eaf4;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+.temp{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.temp .tempr{
+    font-size: 10rem;
+}
+.temp .desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.temp .desc i{
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+.temp .desc span{
+    font-size: 1.5rem;
+}
+.addinfo{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.windi, .humidi, .visibilityi{
+    background-color: #ecf0f1b9;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 15px;
+    padding: 30px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.addinfo i{
+    font-size: 3rem;
+    opacity: 0.8.;
+}
+.windi div, .humidi div, .visibilityi div{
+    text-align: center;
+}
